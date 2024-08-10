@@ -1,0 +1,15 @@
+@if(loading){
+<h5>Cargando...</h5>
+}
+
+@if (!loading) {
+<div class="card" style="width: 18rem;">
+    <img src="{{product?.image}}" class="card-img-top" alt="{{product?.title}}">
+    <div class="card-body">
+        <h5 class="card-title">{{product?.title}}</h5>
+        <p class="card-text">{{product?.description}}</p>
+        <h3>${{product?.price}}</h3>
+        <a href="#" class="btn btn-primary">Comprar</a>
+    </div>
+</div>
+}
